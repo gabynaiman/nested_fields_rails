@@ -1,5 +1,2 @@
 require "nested_fields/version"
-
-module NestedFields
-  # Your code goes here...
-end
+require 'nested_fields/form_builder'

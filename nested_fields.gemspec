@@ -4,9 +4,9 @@ require File.expand_path('../lib/nested_fields/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["gabriel"]
   gem.email         = ["gnaiman@keepcon.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = 'Manage multiple models the same form'
+  gem.summary       = 'Manage multiple models the same form'
+  gem.homepage      = 'https://github.com/gabynaiman/nested_fields'
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
