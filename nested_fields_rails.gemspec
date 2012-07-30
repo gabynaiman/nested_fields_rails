@@ -3,7 +3,7 @@ require File.expand_path('../lib/nested_fields_rails/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.name          = 'nested_fields_rails'
-  s.version       = NestedFields::VERSION
+  s.version       = NestedFieldsRails::VERSION
   
   s.authors       = ["gabriel"]
   s.email         = ["gnaiman@keepcon.com"]
