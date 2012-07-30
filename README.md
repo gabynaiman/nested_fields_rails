@@ -38,9 +38,9 @@ And then add it to the Asset Pipeline in the application.js file:
 	  ...
 	  %strong Phones
 	  = f.link_to_add_nested_fields 'Add', :phones
-	  = f.nested_fields_for :phones do |nf|
-	    = nf.link_to_remove_nested_fields 'Remove'
-	    = nf.text_field :number	
+	  = f.nested_fields_for :phones do |phones_form|
+	    = phones_form.link_to_remove_nested_fields 'Remove'
+	    = phones_form.text_field :number	
 
 ### Partials support
 
@@ -68,9 +68,9 @@ Table wrapper
 	  	  %tr
 	  	    %td f.link_to_add_nested_fields 'Add', :phones
 	  	    %td Phones
-        = f.nested_fields_for :phones, nil, :wrapper => :table do |nf|
-	      %td= nf.link_to_remove_nested_fields 'Remove'
-	      %td= nf.text_field :number
+        = f.nested_fields_for :phones, nil, :wrapper => :table do |phones_form|
+	      %td= phones_form.link_to_remove_nested_fields 'Remove'
+	      %td= phones_form.text_field :number
 
 Custom wrapper
 
@@ -78,9 +78,9 @@ Custom wrapper
 	  ...
 	  %strong Phones
 	  = f.link_to_add_nested_fields 'Add', :phones
-	  = f.nested_fields_for :phones, nil, :collection_wrapper => :ul, :element_wrapper => :li do |nf|
-	    = nf.link_to_remove_nested_fields 'Remove'
-	    = nf.text_field :number	
+	  = f.nested_fields_for :phones, nil, :collection_wrapper => :ul, :element_wrapper => :li do |phones_form|
+	    = phones_form.link_to_remove_nested_fields 'Remove'
+	    = phones_form.text_field :number	
 
 ### Order support
 
@@ -88,12 +88,12 @@ Custom wrapper
 	  ...
 	  %strong Phones
 	  = f.link_to_add_nested_fields 'Add', :phones
-	  = f.nested_fields_for :phones do |nf|
-	    = nf.link_to_remove_nested_fields 'Remove'
-	    = nf.link_to_up_nested_fields 'Up'
-	    = nf.link_to_down_nested_fields 'Down'
-	    = nf.text_field :number
-	    = nf.index_nested_fields :order
+	  = f.nested_fields_for :phones do |phones_form|
+	    = phones_form.link_to_remove_nested_fields 'Remove'
+	    = phones_form.link_to_up_nested_fields 'Up'
+	    = phones_form.link_to_down_nested_fields 'Down'
+	    = phones_form.text_field :number
+	    = phones_form.index_nested_fields :order
 
 ## Contributing
 

@@ -1,17 +1,18 @@
 # -*- encoding: utf-8 -*-
 require File.expand_path('../lib/nested_fields/version', __FILE__)
 
-Gem::Specification.new do |gem|
-  gem.authors       = ["gabriel"]
-  gem.email         = ["gnaiman@keepcon.com"]
-  gem.description   = 'Manage multiple models the same form'
-  gem.summary       = 'Manage multiple models the same form'
-  gem.homepage      = 'https://github.com/gabynaiman/nested_fields'
+Gem::Specification.new do |s|
+  s.name          = 'nested_fields'
+  s.version       = NestedFields::VERSION
+  
+  s.authors       = ["gabriel"]
+  s.email         = ["gnaiman@keepcon.com"]
+  s.homepage      = 'https://github.com/gabynaiman/nested_fields'
+  s.summary       = 'Manage multiple models the same form'
+  s.description   = 'Manage multiple models the same form'
 
-  gem.files         = `git ls-files`.split($\)
-  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "nested_fields"
-  gem.require_paths = ["lib"]
-  gem.version       = NestedFields::VERSION
+  s.files         = `git ls-files`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.require_paths = ["lib"]
 end
