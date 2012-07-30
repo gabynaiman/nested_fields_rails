@@ -1,6 +1,6 @@
 # NestedFields
 
-Manage multiple models the same form. Inspired on [nested_form gem](https://github.com/ryanb/nested_form)
+Manage multiple models in the same form. Inspired on [nested_form gem](https://github.com/ryanb/nested_form)
 
 Tested with Rails 3.2.x and Ruby 1.9.3
 
