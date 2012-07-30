@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors       = ["gabriel"]
   s.email         = ["gnaiman@keepcon.com"]
   s.homepage      = 'https://github.com/gabynaiman/nested_fields_rails'
-  s.summary       = 'Manage multiple models the same form'
-  s.description   = 'Manage multiple models the same form'
+  s.summary       = 'Manage multiple models in the same form'
+  s.description   = 'Manage multiple models in the same form'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
