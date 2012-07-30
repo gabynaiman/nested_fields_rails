@@ -1,4 +1,4 @@
-module NestedFields
+module NestedFieldsRails
   class ::ActionView::Helpers::FormBuilder
 
     def link_to_add_nested_fields(*args, &block)
