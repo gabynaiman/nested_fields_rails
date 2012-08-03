@@ -45,7 +45,12 @@ module NestedFieldsRails
     alias default_fields_for_nested_model fields_for_nested_model
     def fields_for_nested_model(name, object, options, block)
       tag = options[:element_wrapper] || (options[:wrapper] && options[:wrapper].to_sym == :table ? :tr : nil) || :div
-      @template.content_tag(tag, default_fields_for_nested_model(name, object, options, block), :class => 'fields', 'data-object-id' => options[:child_index] || object.object_id)
+      html_attributes = {
+        :class => 'fields', 
+        'data-object-id' => options[:child_index] || object.object_id, 
+        :style => object._destroy ? 'display: none;' : ''
+      }
+      @template.content_tag(tag, default_fields_for_nested_model(name, object, options, block), html_attributes)
     end
 
     private
