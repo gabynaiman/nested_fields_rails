@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
   s.name          = 'nested_fields_rails'
   s.version       = NestedFieldsRails::VERSION
   
-  s.authors       = ["gabriel"]
-  s.email         = ["gnaiman@keepcon.com"]
+  s.authors       = ["Gabriel Naiman"]
+  s.email         = ["gabynaiman@gmail.com"]
   s.homepage      = 'https://github.com/gabynaiman/nested_fields_rails'
   s.summary       = 'Manage multiple models in the same form'
   s.description   = 'Manage multiple models in the same form'
