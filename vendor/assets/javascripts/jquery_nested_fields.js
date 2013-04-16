@@ -73,23 +73,23 @@ jQuery(function($) {
         return {'associationName': associationName, 'objectId': objectId};
     };
 
-    $('.add-nested-fields').live('click', function() {
+    $('.add-nested-fields').on('click', function() {
         var link = $(this);
         var associationName = link.attr('data-association');
         new NestedFields(associationName).add();
     });
 
-    $('.remove-nested-fields').live('click', function() {
+    $('.remove-nested-fields').on('click', function() {
         var context = nestedFieldContext(this);
         new NestedFields(context.associationName).remove(context.objectId);
     });
 
-    $('.up-nested-fields').live('click', function() {
+    $('.up-nested-fields').on('click', function() {
         var context = nestedFieldContext(this);
         new NestedFields(context.associationName).up(context.objectId);
     });
 
-    $('.down-nested-fields').live('click', function() {
+    $('.down-nested-fields').on('click', function() {
         var context = nestedFieldContext(this);
         new NestedFields(context.associationName).down(context.objectId);
     });
